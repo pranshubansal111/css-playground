@@ -1,0 +1,73 @@
+/* Basic CSS Syntax Format */
+/* selector { property: value; } */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Ways to Include CSS */
+/* - Inline CSS: directly in HTML element e.g., <p style="color: red;">Text</p> */
+/* - Internal CSS: inside <style> tag in the HTML <head> section */
+/* - External CSS: using external stylesheet (here, we are using style.css) */
+
+/* Note: Inline and internal CSS are usually for quick styling.
+   External CSS (like this file) is preferred for maintainability. */
+
+
+/* CSS Color Property */
+.color-named {
+    color: blue; /* Named color */
+}
+
+.color-rgb {
+    color: rgb(255, 0, 0); /* RGB color */
+}
+
+.color-hex {
+    color: #008000; /* Hex color */
+}
+
+
+/* Background Color Property */
+.bg-named {
+    background-color: yellow; /* Named color */
+}
+
+.bg-rgb {
+    background-color: rgb(200, 200, 200); /* RGB format */
+}
+
+.bg-hex {
+    background-color: #f0f8ff; /* Hex format */
+}
+
+/* Text Properties */
+.text-alignment {
+    text-align: center;
+}
+
+.font-weight {
+    font-weight: bold;
+}
+
+.text-decoration {
+    text-decoration: underline;
+}
+
+.line-height {
+    line-height: 1.6;
+}
+
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+.font-size {
+    font-size: 20px;
+}   
+
+/* Font Family */
+.custom-font {
+    font-family: 'Courier New', Courier, monospace;
+}
