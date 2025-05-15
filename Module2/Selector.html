@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Element Selector Demo</h2>
+    <p>This is a paragraph.</p>
+    <div>This is a div.</div>
+
+    <div class="box blue-box">This is a blue box.</div>
+    <div class="box green-box">This is a green box.</div>
+
+    <div id="unique-box">This is a unique box.</div>
+
+    <div class="container">
+        <p>This is a paragraph inside the container.</p>
+        <div>
+            <p>This is a paragraph inside a div inside the container.</p>
+        </div>
+    </div>
+
+    <div class="parent">
+        <p>This is a direct child of the parent.</p>
+        <div>
+            <p>This is NOT a direct child of the parent.</p>
+        </div>
+    </div>
+
+    <div class="sibling-container">
+        <h1 class="head">Sibling Head</h1>
+        <p>Sibling 1</p>
+        <p>Sibling 2</p>
+        <p>Sibling 3</p>
+    </div>
+
+    <input type="text" value="Text input">
+    <input type="password" value="Password input">
+    <a href="https://www.example.com">Example Link</a>
+    <a href="#">Internal Link</a>
+
+    <button>Hover Me</button>
+    <ul id="pseudo-class-list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+      <input type="checkbox" checked> Checkbox
+    <input type="text" id="name-input">
+
+    <p class="first-line">This is a paragraph with a styled first line.This is a paragraph with a styled first line.This is a paragraph with a styled first line.This is a paragraph with a styled first line.This is a paragraph with a styled first line.This is a paragraph with a styled first line.This is a paragraph with a styled first line.</p>
+    <p class="first-letter">This is a paragraph with a styled first letter.</p>
+
+    <div id="important-element" style="background-color: black;">This demonstrates !important.</div>
+
+</body>
+</html>

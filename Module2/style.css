@@ -1,0 +1,122 @@
+/* Universal Selector - Applies to ALL elements on the page. */
+* {
+    margin: 5px;
+    padding: 0;
+}
+
+/* Element Selector - Targets elements by their tag name (e.g., p, div, h2). */
+h2 {
+    color: blue;
+    text-align: center;
+}
+p {
+    color: red;
+    line-height: 1.5;
+}
+div {
+    color: limegreen;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* Class Selector - Targets elements with a specific class attribute.  Can be used on multiple elements. */
+.box {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    border: 2px solid #000;
+    text-align: center;
+    line-height: 50px; /* Vertically center text */
+}
+.blue-box {
+    background-color: lightblue;
+    color: blue;
+}
+.green-box {
+    background-color: lightgreen;
+    color: green;
+}
+
+/* ID Selector - Targets a single, unique element with a specific ID attribute.*/
+#unique-box {
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+    color: orange;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid #000;
+    margin: 10px;
+}
+
+/* Descendant Selector - Targets elements that are descendants (children, grandchildren, etc.) of another element. */
+.container p {
+    color: purple;
+}
+
+/* Child Combinator - Targets elements that are direct children of another element. */
+.parent > p {
+    font-weight: bold;
+    color: darkgreen;
+}
+
+/* Sibling Combinator - Targets the sibling immediately after the selected element. */
+.head + p {
+    background-color: #ffeecc;
+}
+
+/* Attribute Selector - Targets elements with a specific attribute or attribute value. */
+input[type="text"] {
+    background-color: #e0f7fa;
+}
+
+input[type="password"] {
+    background-color: #fce4ec;
+}
+
+a[href="https://www.example.com"] {
+    color: green;
+}
+
+a[href="#"] {
+    color: red;
+}
+
+/* Pseudo-class Selector - Targets elements based on their state or position (e.g., hover, active, first-child). */
+button:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+li:first-child {
+    font-weight: bold;
+    color: blue;
+}
+
+li:last-child{
+  color: red;
+}
+
+li:nth-child(2n+1) {
+  background-color: aliceblue;
+}
+
+
+/* Pseudo-element Selector - Targets specific parts of an element, not the element itself (e.g., the first line, the first letter). */
+.first-line::first-line {
+    color: teal;
+    font-size: 20px;
+}
+
+.first-letter::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF4500;  /* OrangeRed */
+}
+
+/* !important - Forces a style to take precedence over all other conflicting styles. */
+#important-element {
+  background-color: lightcoral !important; /*This will have the highest importance*/
+  color: white;
+}
